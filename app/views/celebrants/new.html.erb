@@ -1,0 +1,13 @@
+<%= form_for @celebrant do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  Tasks willing to do:
+
+  <%#= f.label :greeter %>
+  <%#= f.check_box :greeter %>
+
+  <%= f.submit 'Submit' %>
+
+<% end %>
