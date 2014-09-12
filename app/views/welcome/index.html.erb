@@ -1,5 +1,10 @@
 <%= link_to 'Add New Celebrant', new_celebrant_path %>
+<%= link_to 'Add New Task', new_task_path %>
 
 <%= @celebrants.each do |celebrant| %>
   <%= celebrant.name %>
+<% end %>
+
+<%= @tasks.each do |t| %>
+  <%= t.name %>
 <% end %>
