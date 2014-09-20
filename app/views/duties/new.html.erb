@@ -1,0 +1,9 @@
+<%= @celebrant.name %>
+
+<%= form_for [@celebrant, @duties], url: celebrant_duties_path do |f| %>
+  <div>
+    <%= f.collection_check_boxes(:task_id, Task.order(:name), :id, :name) %>
+  </div>
+  <%= f.submit %>
+
+<% end %>
